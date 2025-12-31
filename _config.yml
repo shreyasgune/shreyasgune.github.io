@@ -1,4 +1,6 @@
 name: Shreyas Gune | Portal
 title: null
-# theme: jekyll-theme-hacker
-remote_theme: julianolf/jekyll-theme-8bit 
+remote_theme: julianolf/jekyll-theme-8bit
+plugins:
+  - jekyll-remote-theme
+ 
