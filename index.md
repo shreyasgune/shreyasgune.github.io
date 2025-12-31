@@ -23,15 +23,22 @@ layout: default
 <div class="nes-container is-rounded">
     <h3>📚 KEY RESOURCES</h3>
     <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-        <button class="nes-btn is-primary" onclick="window.location.href='docs/what_i_do.md'">What I Do</button>
-        <button class="nes-btn is-primary" onclick="window.location.href='docs/slo_sli_method.md'">SLOs & SLIs</button>
-        <button class="nes-btn is-primary" onclick="window.location.href='docs/jira_method.md'">JIRA Method</button>
+        <a href="docs/what_i_do.md" class="nes-btn is-primary">What I Do</a>
+        <a href="docs/slo_sli_method.md" class="nes-btn is-primary">SLOs & SLIs</a>
+        <a href="docs/jira_method.md" class="nes-btn is-primary">JIRA Method</a>
     </div>
 </div>
 
 ---
 
 ## 🚀 ACTIVE PROJECTS
+
+<div class="nes-container is-rounded">
+    <h4>Currently In Progress</h4>
+    <ul>
+        <li><a href="https://github.com/shreyasgune/sgune-ai">AI Experiments</a></li>
+    </ul>
+</div>
 
 <div class="nes-container is-rounded" style="border-color: #00ff00; background-color: rgba(0, 255, 0, 0.05);">
     <h4>🆕 NEW!</h4>
@@ -42,16 +49,6 @@ layout: default
         <li><a href="https://github.com/shreyasgune/promfana/tree/main/learning">Prometheus Query Language Lab</a></li>
     </ul>
 </div>
-
-<div class="nes-container is-rounded">
-    <h4>Currently In Progress</h4>
-    <ul>
-        <li><a href="https://github.com/shreyasgune/promfana/tree/main/monitoring-stack">Monitoring and Alerting in Kubernetes (Prometheus, Grafana, Alertmanager, Tempo)</a></li>
-        <li><a href="https://github.com/shreyasgune/terraform-snippets">Terraform: Design Patterns</a></li>
-        <li><a href="https://github.com/shreyasgune/sgune-ai">AI Experiments</a></li>
-    </ul>
-</div>
-
 ---
 
 ---
@@ -85,10 +82,10 @@ layout: default
     <div class="project-section">
         <div class="project-item"><a href="https://github.com/shreyasgune/aks">Azure Kubernetes</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/k8-blue-green">Kubernetes Blue-Green</a></div>
-        <div class="project-item"><a href="https://github.com/shreyasgune/kubernetes-deployment">Kubernetes Deployment</a> <span class="status-active">2025 UPDATE</span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/kubernetes-deployment">Kubernetes Deployment</a> <span class="status-active">2026 UPDATE</span></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/skaffold-demo">Skaffold Demo</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/kubecron-example">Kubernetes Cron</a></div>
-        <div class="project-item"><a href="https://github.com/shreyasgune/sgune-cert-manager">Cert Manager</a> <span class="status-active">2025 UPDATE</span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/sgune-cert-manager">Cert Manager</a> <span class="status-active">2026 UPDATE</span></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/k8-canary">Canary Deployments</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/k8-canary/tree/master/k8s/ingress">Kubernetes Ingress</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/skaffold-demo/tree/master/ingress-controller">NGINX Ingress</a></div>
@@ -101,8 +98,8 @@ layout: default
 <div class="nes-container is-rounded">
     <div class="project-section">
         <div class="project-item"><a href="https://github.com/shreyasgune/aks/tree/main/.github/workflows">Azure CI/CD using Github Actions</a></div>
-        <div class="project-item"><a href="https://github.com/shreyasgune/git-ci">Github CI Examples</a> <span class="status-active">2025 UPDATE</span></div>
-        <div class="project-item"><a href="https://github.com/shreyasgune/JenkinsToStart">Jenkins</a> <span class="status-active">2025 UPDATE</span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/git-ci">Github CI Examples</a> <span class="status-active">2026 UPDATE</span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/JenkinsToStart">Jenkins</a> <span class="status-active">2026 UPDATE</span></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/aks/tree/main/helm-stuff/bootstraper/charts/argocd">ArgoCD</a></div>
         <div class="project-item"><span style="color: #ffcc00;">⏳ Atlantis (Coming Soon)</span></div>
     </div>
@@ -112,12 +109,13 @@ layout: default
 <div class="nes-container is-rounded">
     <div class="project-section">
         <div class="project-item"><a href="https://github.com/shreyasgune/ELK-lab">ELK Lab</a></div>
-        <div class="project-item"><a href="https://github.com/shreyasgune/promfana">Prometheus + Grafana Lab</a> <span class="status-active">2025 UPDATE</span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/promfana">Prometheus + Grafana Lab</a> <span class="status-active">2026 UPDATE</span></div>
         <div class="project-item"><a href="docs/notes/install-logging-agent.md">Install Logging Agent</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/promfana/tree/main/monitoring-stack/loki-stack">Loki Lab</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/grafana-tempo">Tempo Lab</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/promfana/blob/main/promql-alert-compendium.md">PROMQL and Alerts Compendium</a> <span class="status-new">NEW!</span></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/promfana/tree/main/learning">Prometheus Query Language Lab</a> <span class="status-new">NEW!</span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/promfana/tree/main/monitoring-stack">Monitoring and Alerting in Kubernetes (Prometheus, Grafana, Alertmanager, Tempo)</a></div>
         <div class="project-item"><span style="color: #ffcc00;">⏳ AlertManager Lab (Coming Soon)</span></div>
         <div class="project-item"><span style="color: #ffcc00;">⏳ Fluentd Lab (Coming Soon)</span></div>
     </div>
@@ -126,8 +124,8 @@ layout: default
 ## SERVICE MESH
 <div class="nes-container is-rounded">
     <div class="project-section">
-        <div class="project-item"><a href="https://github.com/shreyasgune/istio-lab">Istio Lab</a> <span class="status-active">2025 UPDATE</span></div>
-        <div class="project-item"><a href="https://github.com/shreyasgune/consul-lab">Consul Lab</a> <span class="status-active">2025 UPDATE</span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/istio-lab">Istio Lab</a> <span class="status-active">2026 UPDATE</span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/consul-lab">Consul Lab</a> <span class="status-active">2026 UPDATE</span></div>
     </div>
 </div>
 
@@ -163,7 +161,7 @@ layout: default
     <div class="project-section">
         <div class="project-item"><a href="https://github.com/shreyasgune/OpenStack-Topo-Deployment">OpenStack Lab</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/rancher-lab">Rancher Lab</a></div>
-        <div class="project-item"><a href="https://github.com/shreyasgune/terraform-snippets">Terraform Snippets</a> <span class="status-active">2025 UPDATE</span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/terraform-snippets">Terraform Snippets</a> <span class="status-active">2026 UPDATE</span></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/dnsmasq-docker">dnsmasq in Docker</a></div>
     </div>
 </div>
@@ -272,7 +270,7 @@ layout: default
 ## 🎯 KEY FOCUS AREAS
 
 <div class="nes-container is-rounded">
-    <p><a href="docs/key_focus_areas.md">📌 Click to Learn More</a></p>
+    <p><a href="docs/key_focus_areas.md" class="nes-btn is-primary" style="display: inline-block;">📌 Learn More</a></p>
     <ul>
         <li>Efficient and Secure Software Execution</li>
         <li>Security</li>
@@ -287,7 +285,7 @@ layout: default
 ## 🛡️ AREAS OF FOCUS FOR MITIGATION
 
 <div class="nes-container is-rounded">
-    <p><a href="docs/mitigation_focus.md">📌 Click to Learn More</a></p>
+    <p><a href="docs/mitigation_focus.md" class="nes-btn is-primary" style="display: inline-block;">📌 Learn More</a></p>
     <ul>
         <li>Technical Debt</li>
         <li>Complex or Inefficient Design Patterns</li>

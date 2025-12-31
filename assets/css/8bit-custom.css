@@ -44,29 +44,52 @@ h3 {
     font-size: 1rem;
 }
 
-/* Buttons */
+/* Buttons - NES.css style */
 .nes-btn {
     background-color: var(--8bit-primary);
     color: var(--8bit-text);
-    border: 2px solid var(--8bit-text);
-    padding: 0.5rem 1rem;
+    border: 4px outset #dfdfdf;
+    padding: 0.75rem 1.5rem;
     cursor: pointer;
     font-family: 'Press Start 2P', cursive;
     font-size: 0.8rem;
-    margin: 0.25rem;
-    transition: all 0.1s;
+    margin: 0.5rem 0.25rem;
+    transition: all 0.05s;
+    display: inline-block;
+    box-shadow: inset -4px -4px #000, inset 4px 4px #dfdfdf;
 }
 
 .nes-btn:hover {
     background-color: var(--8bit-secondary);
     color: var(--8bit-bg);
-    transform: translate(-2px, -2px);
-    box-shadow: 2px 2px 0px var(--8bit-primary);
 }
 
 .nes-btn:active {
-    transform: translate(0, 0);
-    box-shadow: none;
+    box-shadow: inset 4px 4px #000, inset -4px -4px #dfdfdf;
+}
+
+.nes-btn.is-primary {
+    background-color: var(--8bit-primary);
+}
+
+.nes-btn.is-primary:hover {
+    background-color: var(--8bit-secondary);
+}
+
+/* Internal Doc Links */
+a[href*="docs/"] {
+    color: var(--8bit-secondary);
+    text-decoration: none;
+    border-bottom: 3px solid var(--8bit-secondary);
+    padding-bottom: 2px;
+    background-color: rgba(0, 217, 255, 0.1);
+    padding: 2px 4px;
+}
+
+a[href*="docs/"]:hover {
+    color: var(--8bit-primary);
+    background-color: rgba(255, 0, 85, 0.2);
+    border-bottom-color: var(--8bit-primary);
 }
 
 /* Links */
@@ -114,6 +137,12 @@ a:hover {
     color: var(--8bit-text);
     border: 2px solid var(--8bit-text);
     margin-right: 0.5rem;
+    border-bottom: 2px solid var(--8bit-text);
+}
+
+.project-item a:hover {
+    background-color: var(--8bit-secondary);
+    color: var(--8bit-bg);
 }
 
 /* Status badges */
@@ -195,6 +224,25 @@ code {
     font-size: 0.8rem;
 }
 
+/* List styling for doc sections */
+.nes-container ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.nes-container ul li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.nes-container ul li:before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    color: var(--8bit-primary);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     h1 {
@@ -208,4 +256,10 @@ code {
     .container {
         padding: 1rem;
     }
+    
+    .nes-btn {
+        font-size: 0.7rem;
+        padding: 0.5rem 1rem;
+    }
 }
+
