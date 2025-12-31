@@ -45,7 +45,7 @@ layout: default
     <ul>
         <li><a href="docs/notes/observability_product_roadmap/Product%20Roadmap%20_%20Observability%20Initiative_sgune.pdf">Product Roadmap for Observability</a></li>
         <li><a href="docs/notes/observability_product_roadmap/ganttchart.html">Observability Gantt Chart and Table</a></li>
-        <li><a href="https://github.com/shreyasgune/promfana/blob/main/promql-alert-compendium.html">PROMQL and Alerts Compendium</a></li>
+        <li><a href="https://github.com/shreyasgune/promfana/blob/main/promql-alert-compendium.md">PROMQL and Alerts Compendium</a></li>
         <li><a href="https://github.com/shreyasgune/promfana/tree/main/learning">Prometheus Query Language Lab</a></li>
     </ul>
 </div>
@@ -113,7 +113,7 @@ layout: default
         <div class="project-item"><a href="docs/notes/install-logging-agent.html">Install Logging Agent</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/promfana/tree/main/monitoring-stack/loki-stack">Loki Lab</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/grafana-tempo">Tempo Lab</a></div>
-        <div class="project-item"><a href="https://github.com/shreyasgune/promfana/blob/main/promql-alert-compendium.html">PROMQL and Alerts Compendium</a> <span class="status-new">NEW!</span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/promfana/blob/main/promql-alert-compendium.md">PROMQL and Alerts Compendium</a> <span class="status-new">NEW!</span></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/promfana/tree/main/learning">Prometheus Query Language Lab</a> <span class="status-new">NEW!</span></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/promfana/tree/main/monitoring-stack">Monitoring and Alerting in Kubernetes (Prometheus, Grafana, Alertmanager, Tempo)</a></div>
         <div class="project-item"><span style="color: #ffcc00;">⏳ AlertManager Lab (Coming Soon)</span></div>
@@ -198,7 +198,7 @@ layout: default
 ## GAME DEVELOPMENT
 <div class="nes-container is-rounded">
     <div class="project-section">
-        <div class="project-item"><a href="https://github.com/shreyasgune/see_plus_plus/blob/gamer_g/gamez/notes.html">C++: Game Design using SFML and ECS Paradigms</a></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/see_plus_plus/blob/gamer_g/gamez/notes.md">C++: Game Design using SFML and ECS Paradigms</a></div>
     </div>
 </div>
 
