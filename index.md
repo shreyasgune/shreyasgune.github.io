@@ -23,9 +23,9 @@ layout: default
 <div class="nes-container is-rounded">
     <h3>📚 KEY RESOURCES</h3>
     <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-        <a href="docs/what_i_do.md" class="nes-btn is-primary">What I Do</a>
-        <a href="docs/slo_sli_method.md" class="nes-btn is-primary">SLOs & SLIs</a>
-        <a href="docs/jira_method.md" class="nes-btn is-primary">JIRA Method</a>
+        <a href="docs/what_i_do.html" class="nes-btn is-primary">What I Do</a>
+        <a href="docs/slo_sli_method.html" class="nes-btn is-primary">SLOs & SLIs</a>
+        <a href="docs/jira_method.html" class="nes-btn is-primary">JIRA Method</a>
     </div>
 </div>
 
@@ -45,7 +45,7 @@ layout: default
     <ul>
         <li><a href="docs/notes/observability_product_roadmap/Product%20Roadmap%20_%20Observability%20Initiative_sgune.pdf">Product Roadmap for Observability</a></li>
         <li><a href="docs/notes/observability_product_roadmap/ganttchart.html">Observability Gantt Chart and Table</a></li>
-        <li><a href="https://github.com/shreyasgune/promfana/blob/main/promql-alert-compendium.md">PROMQL and Alerts Compendium</a></li>
+        <li><a href="https://github.com/shreyasgune/promfana/blob/main/promql-alert-compendium.html">PROMQL and Alerts Compendium</a></li>
         <li><a href="https://github.com/shreyasgune/promfana/tree/main/learning">Prometheus Query Language Lab</a></li>
     </ul>
 </div>
@@ -110,10 +110,10 @@ layout: default
     <div class="project-section">
         <div class="project-item"><a href="https://github.com/shreyasgune/ELK-lab">ELK Lab</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/promfana">Prometheus + Grafana Lab</a> <span class="status-active">2026 UPDATE</span></div>
-        <div class="project-item"><a href="docs/notes/install-logging-agent.md">Install Logging Agent</a></div>
+        <div class="project-item"><a href="docs/notes/install-logging-agent.html">Install Logging Agent</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/promfana/tree/main/monitoring-stack/loki-stack">Loki Lab</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/grafana-tempo">Tempo Lab</a></div>
-        <div class="project-item"><a href="https://github.com/shreyasgune/promfana/blob/main/promql-alert-compendium.md">PROMQL and Alerts Compendium</a> <span class="status-new">NEW!</span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/promfana/blob/main/promql-alert-compendium.html">PROMQL and Alerts Compendium</a> <span class="status-new">NEW!</span></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/promfana/tree/main/learning">Prometheus Query Language Lab</a> <span class="status-new">NEW!</span></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/promfana/tree/main/monitoring-stack">Monitoring and Alerting in Kubernetes (Prometheus, Grafana, Alertmanager, Tempo)</a></div>
         <div class="project-item"><span style="color: #ffcc00;">⏳ AlertManager Lab (Coming Soon)</span></div>
@@ -198,7 +198,7 @@ layout: default
 ## GAME DEVELOPMENT
 <div class="nes-container is-rounded">
     <div class="project-section">
-        <div class="project-item"><a href="https://github.com/shreyasgune/see_plus_plus/blob/gamer_g/gamez/notes.md">C++: Game Design using SFML and ECS Paradigms</a></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/see_plus_plus/blob/gamer_g/gamez/notes.html">C++: Game Design using SFML and ECS Paradigms</a></div>
     </div>
 </div>
 
@@ -267,7 +267,7 @@ layout: default
 ## 🎯 KEY FOCUS AREAS
 
 <div class="nes-container is-rounded">
-    <p><a href="docs/key_focus_areas.md" class="nes-btn is-primary" style="display: inline-block;">📌 Learn More</a></p>
+    <p><a href="docs/key_focus_areas.html" class="nes-btn is-primary" style="display: inline-block;">📌 Learn More</a></p>
     <ul>
         <li>Efficient and Secure Software Execution</li>
         <li>Security</li>
@@ -282,7 +282,7 @@ layout: default
 ## 🛡️ AREAS OF FOCUS FOR MITIGATION
 
 <div class="nes-container is-rounded">
-    <p><a href="docs/mitigation_focus.md" class="nes-btn is-primary" style="display: inline-block;">📌 Learn More</a></p>
+    <p><a href="docs/mitigation_focus.html" class="nes-btn is-primary" style="display: inline-block;">📌 Learn More</a></p>
     <ul>
         <li>Technical Debt</li>
         <li>Complex or Inefficient Design Patterns</li>
