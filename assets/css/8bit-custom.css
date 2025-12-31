@@ -202,10 +202,13 @@ svg {
 
 /* Blockquotes and Code */
 blockquote {
-    border-left: 4px solid var(--8bit-secondary);
-    padding-left: 1rem;
-    margin-left: 0;
-    color: rgba(255, 255, 255, 0.8);
+    border-left: 5px solid var(--8bit-primary);
+    margin: 1.5rem 0;
+    padding: 1rem 1.5rem;
+    background-color: #e0e0e0; /* A slightly darker background for contrast */
+    color: var(--8bit-text);
+    font-family: 'VT323', monospace;
+    font-size: 1.1rem;
 }
 
 code {
@@ -262,6 +265,12 @@ code {
     .nes-btn {
         font-size: 0.7rem;
         padding: 0.5rem 1rem;
+    }
+    
+    p {
+        font-family: 'VT323', monospace;
+        font-size: 1.1rem;
+        line-height: 1.8;
     }
 }
 
