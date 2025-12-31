@@ -1,10 +1,10 @@
-/* 8-bit Theme Custom Styling - Vintage Postcard */
+/* 8-bit Theme Custom Styling - Game Boy Original */
 
 :root {
-    --8bit-primary: #d4511e;
-    --8bit-secondary: #7cb9e8;
+    --8bit-primary: #2d5016;
+    --8bit-secondary: #8bbc0f;
     --8bit-bg: #ffffff;
-    --8bit-text: #2c2c2c;
+    --8bit-text: #000000;
 }
 
 body {
@@ -56,16 +56,16 @@ h3 {
     margin: 0.5rem 0.25rem;
     transition: all 0.05s;
     display: inline-block;
-    box-shadow: inset -4px -4px #000, inset 4px 4px #dfdfdf;
+    box-shadow: inset -4px -4px #1a1a1a, inset 4px 4px #dfdfdf;
 }
 
 .nes-btn:hover {
     background-color: var(--8bit-secondary);
-    color: var(--8bit-text);
+    color: #000000;
 }
 
 .nes-btn:active {
-    box-shadow: inset 4px 4px #000, inset -4px -4px #dfdfdf;
+    box-shadow: inset 4px 4px #1a1a1a, inset -4px -4px #dfdfdf;
 }
 
 .nes-btn.is-primary {
@@ -75,7 +75,7 @@ h3 {
 
 .nes-btn.is-primary:hover {
     background-color: var(--8bit-secondary);
-    color: var(--8bit-text);
+    color: #000000;
 }
 
 /* Internal Doc Links */
@@ -84,7 +84,7 @@ a[href*="docs/"] {
     text-decoration: none;
     border-bottom: 3px solid var(--8bit-primary);
     padding-bottom: 2px;
-    background-color: rgba(124, 185, 232, 0.1);
+    background-color: rgba(139, 188, 15, 0.1);
     padding: 2px 4px;
 }
 
@@ -96,14 +96,14 @@ a[href*="docs/"]:hover {
 
 /* Links */
 a {
-    color: var(--8bit-secondary);
+    color: var(--8bit-primary);
     text-decoration: none;
     border-bottom: 2px solid var(--8bit-secondary);
 }
 
 a:hover {
-    color: var(--8bit-primary);
-    background-color: rgba(124, 185, 232, 0.15);
+    color: var(--8bit-secondary);
+    background-color: rgba(139, 188, 15, 0.15);
 }
 
 /* Containers */
@@ -128,7 +128,7 @@ a:hover {
 .project-item {
     margin: 0.75rem 0;
     padding: 0.5rem;
-    background-color: rgba(212, 81, 30, 0.1);
+    background-color: rgba(139, 188, 15, 0.1);
     border: 1px solid var(--8bit-primary);
 }
 
@@ -192,11 +192,11 @@ svg {
     gap: 0.5rem;
     padding: 0.5rem;
     border: 2px solid var(--8bit-secondary);
-    background-color: rgba(124, 185, 232, 0.1);
+    background-color: rgba(139, 188, 15, 0.1);
 }
 
 .social-links a:hover {
-    background-color: rgba(212, 81, 30, 0.15);
+    background-color: rgba(45, 80, 22, 0.15);
     border-color: var(--8bit-primary);
 }
 
