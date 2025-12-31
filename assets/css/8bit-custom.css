@@ -1,9 +1,9 @@
-/* 8-bit Theme Custom Styling */
+/* 8-bit Theme Custom Styling - Commodore 64 Classic */
 
 :root {
-    --8bit-primary: #ff0055;
-    --8bit-secondary: #00d9ff;
-    --8bit-bg: #0a0e27;
+    --8bit-primary: #ff6b35;
+    --8bit-secondary: #4ecdc4;
+    --8bit-bg: #1a1a1a;
     --8bit-text: #ffffff;
 }
 
