@@ -1,24 +1,66 @@
-# Areas of Focus for Mitigation
-#### <b>Technical Debt</b>: 
-- Address and reduce accumulated technical debt 
-    - <i>to improve system maintainability and scalability</i>
+<div class="nes-container is-rounded container">
 
-#### <b>Complex or Inefficient Design Patterns</b>: 
-- Simplify and streamline design patterns 
-    - <i>to enhance system clarity and performance</i>
+  <h2>Areas of Focus for Mitigation</h2>
 
-#### <b>Exposed Credentials</b>: 
-- Eliminate the use of plaintext credentials 
-    - <i>to ensure robust security practices and minimize risk</i>
+  <h4>Technical Debt</h4>
+  <ul>
+    <li>
+      Address and reduce accumulated technical debt
+      <ul>
+        <li><em>Improve system maintainability and scalability</em></li>
+      </ul>
+    </li>
+  </ul>
 
-#### <b>Scope Creep</b>: 
-- Prevent and manage scope creep 
-    - <i>to ensure project timelines, objectives, and resources remain aligned with initial goals</i>
+  <h4>Complex or Inefficient Design Patterns</h4>
+  <ul>
+    <li>
+      Simplify and streamline design patterns
+      <ul>
+        <li><em>Enhance system clarity and performance</em></li>
+      </ul>
+    </li>
+  </ul>
 
-#### <b>Underutilized Resources</b>: 
-- Optimize resource utilization 
-    - <i>to ensure efficiency and cost-effectiveness across the system</i>
+  <h4>Exposed Credentials</h4>
+  <ul>
+    <li>
+      Eliminate the use of plaintext credentials
+      <ul>
+        <li><em>Ensure robust security practices and minimize risk</em></li>
+      </ul>
+    </li>
+  </ul>
 
-#### <b>Cloud Vendor Dependency</b>: 
-- Minimize reliance on cloud-specific tools by adopting a cloud-agnostic approach where feasible, while evaluating each case individually 
-    - <i>to determine the most appropriate solution</i>
+  <h4>Scope Creep</h4>
+  <ul>
+    <li>
+      Prevent and manage scope creep
+      <ul>
+        <li><em>Ensure project timelines, objectives, and resources remain aligned with initial goals</em></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h4>Underutilized Resources</h4>
+  <ul>
+    <li>
+      Optimize resource utilization
+      <ul>
+        <li><em>Ensure efficiency and cost-effectiveness across the system</em></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h4>Cloud Vendor Dependency</h4>
+  <ul>
+    <li>
+      Minimize reliance on cloud-specific tools by adopting a cloud-agnostic approach where feasible,
+      while evaluating each case individually
+      <ul>
+        <li><em>Determine the most appropriate solution</em></li>
+      </ul>
+    </li>
+  </ul>
+
+</div>

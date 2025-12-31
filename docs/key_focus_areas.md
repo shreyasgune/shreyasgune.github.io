@@ -1,45 +1,69 @@
-# Key Focus Areas
-#### <b>Efficient and Secure Software Execution</b>: 
-- Run applications (games, tools, apps) on various infrastructures
-    - Google Cloud Platform, 
-    - Microsoft Azure, 
-    - Amazon Web Services,
-    - Openstack,
-    - Alibaba Cloud
-- Leveraging hardware and software features based on thorough pre-analysis to select the optimal Stock Keeping Unit (SKU).
+<div class="nes-container is-rounded container">
 
-#### <b>Security</b>: 
+  <h2>Key Focus Areas</h2>
 
-Ensure secure execution through the use of 
-- robust policies, 
-- secrets management, 
-- and networking access controls lists (ACLs)
+  <h4>Efficient and Secure Software Execution</h4>
+  <ul>
+    <li>
+      Run applications (games, tools, apps) on various infrastructures
+      <ul>
+        <li>Google Cloud Platform</li>
+        <li>Microsoft Azure</li>
+        <li>Amazon Web Services</li>
+        <li>OpenStack</li>
+        <li>Alibaba Cloud</li>
+      </ul>
+    </li>
+    <li>
+      Leverage hardware and software features based on thorough pre-analysis
+      to select the optimal Stock Keeping Unit (SKU).
+    </li>
+  </ul>
 
-#### <b>Cost Optimization</b>: 
-- Achieve cost efficiency by evaluating and selecting the best-fit tools for each task, 
-- focusing on frugality and leveraging available resources effectively
+  <h4>Security</h4>
+  <p>Ensure secure execution through the use of:</p>
+  <ul>
+    <li>Robust policies</li>
+    <li>Secrets management</li>
+    <li>Networking access control lists (ACLs)</li>
+  </ul>
 
-#### <b>Business Value Orientation</b>: 
-- Maintain a consistent focus on delivering business value at every stage of the process.
-- Ensuring firm handshakes between all stakeholders involved
+  <h4>Cost Optimization</h4>
+  <ul>
+    <li>Achieve cost efficiency by evaluating and selecting best-fit tools for each task</li>
+    <li>Focus on frugality and effective utilization of available resources</li>
+  </ul>
 
-#### <b>Service Design, Instrumentation, and Maintenance</b>:
+  <h4>Business Value Orientation</h4>
+  <ul>
+    <li>Maintain a consistent focus on delivering business value at every stage</li>
+    <li>Ensure firm handshakes between all stakeholders involved</li>
+  </ul>
 
-Architect, instrument, and manage services through practices like
+  <h4>Service Design, Instrumentation, and Maintenance</h4>
+  <p>Architect, instrument, and manage services through practices such as:</p>
+  <ul>
+    <li>Pipeline Management</li>
+    <li>Infrastructure as Code (IaC)</li>
+    <li>Configuration Management</li>
+    <li>Capacity Planning</li>
+    <li>Autoscaling</li>
+    <li>Automation (where applicable)</li>
+  </ul>
 
-- Pipeline Management, 
-- Infrastructure as Code (IaC), 
-- Configuration management, 
-- Capacity planning, 
-- Autoscaling, 
-- and Automation (where applicable)
+  <h4>Reliability and Feature Balance</h4>
+  <p>Apply key reliability principles including:</p>
+  <ul>
+    <li>Service Level Objectives (SLOs)</li>
+    <li>Service Level Indicators (SLIs)</li>
+    <li>Error Budgets</li>
+    <li>
+      Maintain an optimal balance between:
+      <ul>
+        <li>Feature development</li>
+        <li>System reliability</li>
+      </ul>
+    </li>
+  </ul>
 
-#### <b>Reliability and Feature Balance</b>: 
-
-Apply key principles like 
-- Service Level Objectives (SLOs), 
-- Service Level Indicators (SLIs), 
-- and Error Budgets 
-- maintain an optimal balance between 
-    - feature development
-    - system reliability
+</div>

@@ -1,57 +1,95 @@
-## Install the logging and monitoring agents in the Compute Engine instance
-The data for Nginx requests is missing because without the logging and monitoring agents being installed, the best Google Cloud can do is black-box monitoring. If you want to see more details, then you need to enable white-box monitoring by installing the agents.
+<div class="nes-container is-rounded container">
 
-Use the Navigation menu to navigate to Compute Engine | VM instances.
+  <h2>Install the logging and monitoring agents in the Compute Engine instance</h2>
 
-Click the SSH link for the web-server-vm
+  <p>
+    The data for Nginx requests is missing because without the logging and monitoring agents being installed,
+    the best Google Cloud can do is black-box monitoring. If you want to see more details, then you need to
+    enable white-box monitoring by installing the agents.
+  </p>
 
-Check to see if the logging agent is installed/running.
+  <p>
+    Use the Navigation menu to navigate to <strong>Compute Engine → VM instances</strong>.
+  </p>
 
-```
-sudo service google-fluentd status
-sudo service stackdriver-agent status
-```
-Not surprisingly, the services could not be found. Check to make sure you have the requisite scopes to perform logging and monitoring.
-```
-curl --silent --connect-timeout 1 -f -H "Metadata-Flavor: Google" \
-http://169.254.169.254/computeMetadata/v1/instance/service-accounts/default/scopes
-```
-Note in the response the logging.write and monitoring.write scopes.
+  <p>
+    Click the <strong>SSH</strong> link for the <code>web-server-vm</code>.
+  </p>
 
-Download the script, add the monitoring agent repo to apt, and install the agent.
-```
-curl -sSO https://dl.google.com/cloudagents/add-monitoring-agent-repo.sh
+  <p>
+    Check to see if the logging agent is installed and running:
+  </p>
+
+  <pre><code>sudo service google-fluentd status
+sudo service stackdriver-agent status</code></pre>
+
+  <p>
+    Not surprisingly, the services could not be found. Check to make sure you have the requisite scopes
+    to perform logging and monitoring:
+  </p>
+
+  <pre><code>curl --silent --connect-timeout 1 -f -H "Metadata-Flavor: Google" \
+http://169.254.169.254/computeMetadata/v1/instance/service-accounts/default/scopes</code></pre>
+
+  <p>
+    Note in the response the <code>logging.write</code> and <code>monitoring.write</code> scopes.
+  </p>
+
+  <p>
+    Download the script, add the monitoring agent repository to <code>apt</code>, and install the agent:
+  </p>
+
+  <pre><code>curl -sSO https://dl.google.com/cloudagents/add-monitoring-agent-repo.sh
 sudo bash add-monitoring-agent-repo.sh
 sudo apt-get update
-sudo apt-get install stackdriver-agent
-```
-Start the monitoring agent.
-```
-sudo service stackdriver-agent start
-```
-Install the logging agent.
-```
-curl -sSO https://dl.google.com/cloudagents/install-logging-agent.sh
-sudo bash install-logging-agent.sh
-```
-Retest the two agents again and verify they are both active. If you see any "can not take infinite value" warnings, ignore them.
-```
-sudo service google-fluentd status
-sudo service stackdriver-agent status
-```
-To fully integrate the server, you enable the status information handler in Nginx by adding a configuration file to the Nginx configuration directory.
-```
-(cd /etc/nginx/conf.d/ && sudo curl -O https://raw.githubusercontent.com/Stackdriver/stackdriver-agent-service-configs/master/etc/nginx/conf.d/status.conf)
-```
-Reload the Nginx service.
-```
-sudo service nginx reload
-```
-Enable the Nginx monitoring plugin.
-```
-(cd /opt/stackdriver/collectd/etc/collectd.d/ && sudo curl -O https://raw.githubusercontent.com/Stackdriver/stackdriver-agent-service-configs/master/etc/collectd.d/nginx.conf)
-```
-Restart the monitoring agent.
-```
-sudo service stackdriver-agent restart
-```
+sudo apt-get install stackdriver-agent</code></pre>
+
+  <p>
+    Start the monitoring agent:
+  </p>
+
+  <pre><code>sudo service stackdriver-agent start</code></pre>
+
+  <p>
+    Install the logging agent:
+  </p>
+
+  <pre><code>curl -sSO https://dl.google.com/cloudagents/install-logging-agent.sh
+sudo bash install-logging-agent.sh</code></pre>
+
+  <p>
+    Retest the two agents again and verify they are both active. If you see any
+    <em>"can not take infinite value"</em> warnings, ignore them.
+  </p>
+
+  <pre><code>sudo service google-fluentd status
+sudo service stackdriver-agent status</code></pre>
+
+  <p>
+    To fully integrate the server, enable the status information handler in Nginx
+    by adding a configuration file to the Nginx configuration directory:
+  </p>
+
+  <pre><code>(cd /etc/nginx/conf.d/ && sudo curl -O \
+https://raw.githubusercontent.com/Stackdriver/stackdriver-agent-service-configs/master/etc/nginx/conf.d/status.conf)</code></pre>
+
+  <p>
+    Reload the Nginx service:
+  </p>
+
+  <pre><code>sudo service nginx reload</code></pre>
+
+  <p>
+    Enable the Nginx monitoring plugin:
+  </p>
+
+  <pre><code>(cd /opt/stackdriver/collectd/etc/collectd.d/ && sudo curl -O \
+https://raw.githubusercontent.com/Stackdriver/stackdriver-agent-service-configs/master/etc/collectd.d/nginx.conf)</code></pre>
+
+  <p>
+    Restart the monitoring agent:
+  </p>
+
+  <pre><code>sudo service stackdriver-agent restart</code></pre>
+
+</div>

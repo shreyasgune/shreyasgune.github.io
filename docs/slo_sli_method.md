@@ -1,28 +1,69 @@
-# SLOs and SLIs : How do I go about it?
+<div class="nes-container is-rounded container">
 
-- I sit down with stakeholders, come up with statements for the critical things they care about.
-- We translate those critical paths into SLIs, by identifying metrics that matter.
-- Get priority and firm handshakes on adding the metrics and other code needed in place to measure these SLIs.
-- We negotiate SLO targets with the team, so that once the SLIs are in place, we can create rules and alerts for them.
-- With SLOs established, SLI's in service to those SLO's in place, metrics and alerts to track them, we then move on into discussing short-term and long-term error budgets. 
+  <h2>SLOs and SLIs: How do I go about it?</h2>
 
----
-### SLO Statement
-"The value for X remains as expected for Y% over Z time-window"
+  <ul>
+    <li>
+      Sit down with stakeholders and define statements for the critical things they care about.
+    </li>
+    <li>
+      Translate those critical paths into SLIs by identifying metrics that matter.
+    </li>
+    <li>
+      Establish priority and firm handshakes on adding the required metrics and instrumentation
+      needed to measure these SLIs.
+    </li>
+    <li>
+      Negotiate SLO targets with the team so that, once SLIs are in place, rules and alerts
+      can be created.
+    </li>
+    <li>
+      With SLOs defined, SLIs implemented, and alerts configured, move on to discussions
+      around short-term and long-term error budgets.
+    </li>
+  </ul>
 
-### Rationale
-"X represents as a metric/attribute of key interest because of (specific reason)"
+  <hr />
 
-"Y was calculated based on (specific reason)"
+  <h3>SLO Statement</h3>
+  <blockquote>
+    “The value for X remains as expected for Y% over Z time-window”
+  </blockquote>
 
-"Z is the time-duration in consideration for X because of (specific reason)"
+  <h3>Rationale</h3>
+  <blockquote>
+    “X represents a metric or attribute of key interest because of <em>(specific reason)</em>”
+  </blockquote>
 
-### SLI
-The metric that expresses X is : (some valid metric)
+  <blockquote>
+    “Y was calculated based on <em>(specific reason)</em>”
+  </blockquote>
 
-This metric is located in : (dataset/monitoring-platform) and is sourced from (client/server)
+  <blockquote>
+    “Z is the time-duration considered for X because of <em>(specific reason)</em>”
+  </blockquote>
 
-### Alert
-This metric triggers an alert if the value is over/under X by (some threshold value) for (some amount of time)
+  <h3>SLI</h3>
+  <p>
+    The metric that expresses <strong>X</strong> is:
+    <em>(some valid metric)</em>
+  </p>
 
-This alert is configured at : (location of the alert based on system)
+  <p>
+    This metric is located in:
+    <em>(dataset or monitoring platform)</em> and is sourced from
+    <em>(client or server)</em>.
+  </p>
+
+  <h3>Alert</h3>
+  <p>
+    This metric triggers an alert if the value is over or under <strong>X</strong> by
+    <em>(threshold)</em> for <em>(defined duration)</em>.
+  </p>
+
+  <p>
+    This alert is configured at:
+    <em>(location of the alert based on the system)</em>.
+  </p>
+
+</div>

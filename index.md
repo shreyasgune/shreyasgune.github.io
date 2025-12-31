@@ -152,7 +152,6 @@ layout: default
     <div class="project-section">
         <div class="project-item"><a href="https://github.com/shreyasgune/OPA-Lab/tree/gangnam-style">Open Policy Agent Lab</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/aks/tree/main/helm-stuff/argocd-managed/vault">Vault</a></div>
-        <div class="project-item"><span style="color: #ffcc00;">⏳ OAuth2 with OKTA (OIDC) (Coming Soon)</span></div>
     </div>
 </div>
 
@@ -171,8 +170,6 @@ layout: default
 <div class="nes-container is-rounded">
     <div class="project-section">
         <div class="project-item"><span style="color: #ffcc00;">⏳ RabbitMQ (Coming Soon)</span></div>
-        <div class="project-item"><span style="color: #ffcc00;">⏳ Pulsar (Coming Soon)</span></div>
-        <div class="project-item"><span style="color: #ffcc00;">⏳ Google PubSub (Coming Soon)</span></div>
     </div>
 </div>
 

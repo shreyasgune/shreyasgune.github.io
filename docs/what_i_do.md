@@ -1,53 +1,68 @@
-# What I Do
+<div class="nes-container is-rounded container">
 
-### I work on making applications be cloud native so that they run: cheaper, reliable and performant.
+  <h2>What I Do</h2>
 
-- Service-Level Objectives: SLI, SLO, SLA, Error Budget, Burn Rate
-- Distributed Systems: Architecture, hybrid environments, high availability
-- Configuration Management: Puppet, Hiera, Terraform, Ansible
-- Container Computing: Docker, Kubernetes
-- Cloud Services: Azure, Alibaba Cloud, AWS, GCP, OpenStack
-- Distributed Messaging: RabbitMQ, Pulsar
-- Proxies & Load Balancing
-- Monitoring: Prometheus, Kibana, Grafana, Elasticsearch
-- Logging: Splunk, SysLog, ELK Stack, Linux Journal
-- Source Control: GitHub Enterprise
-- CI/CD: Jenkins, Argo, GitHub Actions, Atlantis
-- Linux: Bash, debugging, performance tuning
-- Networking: Troubleshooting, packet loss, routing
-- Programming: Language-agnostic
+  <h3>
+    I work on making applications cloud-native so that they run cheaper,
+    more reliable, and more performant.
+  </h3>
 
-## Practices
-- Cultivate broad and specialized expertise in relevant areas.
-- Stay up-to-date with technology trends and industry standards.
-- Communicate complex ideas clearly to diverse audiences.
-- Build strong relationships with cross-functional teams.
-- Co-own operations and reliability with partner teams.
-- Deeply understand the services I support and their goals.
-- Explore new technologies through demos, experiments, and labs.
-- Break down complex tasks into manageable units.
-- Participate in on-call rotations to resolve incidents.
-- Lead blameless postmortems to improve service reliability.
-- Collaborate to foster positive relationships across the company.
-- Use systems knowledge to triage problems and optimize resources.
-- Champion automation to reduce manual work and increase velocity.
-- Demonstrate configuration management for service consistency.
-- Build IaC configurations for cloud infrastructure.
-- Support and improve build pipelines.
-- Adopt containers and Kubernetes for new and existing services.
-- Apply "everything-as-code" methodologies where applicable.
-- Automate or eliminate repetitive tasks.
-- Improve workflows to simplify team operations.
-- Troubleshoot incidents using metrics, logs, and other data.
-- Embrace older technologies for their reliability and low maintenance.
-- Spread DevOps philosophies across teams.
-- Collaborate with engineers across software, network, cloud, and systems.
+  <ul>
+    <li>Service-Level Objectives: SLI, SLO, SLA, Error Budget, Burn Rate</li>
+    <li>Distributed Systems: architecture, hybrid environments, high availability</li>
+    <li>Configuration Management: Puppet, Hiera, Terraform, Ansible</li>
+    <li>Container Computing: Docker, Kubernetes</li>
+    <li>Cloud Services: Azure, Alibaba Cloud, AWS, GCP, OpenStack</li>
+    <li>Distributed Messaging: RabbitMQ, Pulsar</li>
+    <li>Proxies and Load Balancing</li>
+    <li>Monitoring: Prometheus, Kibana, Grafana, Elasticsearch</li>
+    <li>Logging: Splunk, SysLog, ELK Stack, Linux Journal</li>
+    <li>Source Control: GitHub Enterprise</li>
+    <li>CI/CD: Jenkins, Argo, GitHub Actions, Atlantis</li>
+    <li>Linux: bash, debugging, performance tuning</li>
+    <li>Networking: troubleshooting, packet loss, routing</li>
+    <li>Programming: language-agnostic</li>
+  </ul>
 
-## Outlook
-- Shape the future of service management using Kubernetes.
-- Support global data platforms across multiple clouds.
-- Improve and manage service migrations across clouds/data centers.
-- Work with partner teams to influence product operations.
-- Enhance monitoring and logging for better observability.
-- Enable Service-Level Objectives for improved service reliability.
-- Design and conduct stress tests to align scale expectations with reality.
+  <h3>Practices</h3>
+
+  <ul>
+    <li>Cultivate broad and specialized expertise in relevant areas</li>
+    <li>Stay up-to-date with technology trends and industry standards</li>
+    <li>Communicate complex ideas clearly to diverse audiences</li>
+    <li>Build strong relationships with cross-functional teams</li>
+    <li>Co-own operations and reliability with partner teams</li>
+    <li>Deeply understand the services I support and their goals</li>
+    <li>Explore new technologies through demos, experiments, and labs</li>
+    <li>Break down complex tasks into manageable units</li>
+    <li>Participate in on-call rotations to resolve incidents</li>
+    <li>Lead blameless postmortems to improve service reliability</li>
+    <li>Collaborate to foster positive relationships across the company</li>
+    <li>Use systems knowledge to triage problems and optimize resources</li>
+    <li>Champion automation to reduce manual work and increase velocity</li>
+    <li>Demonstrate configuration management for service consistency</li>
+    <li>Build Infrastructure as Code (IaC) for cloud infrastructure</li>
+    <li>Support and improve build pipelines</li>
+    <li>Adopt containers and Kubernetes for new and existing services</li>
+    <li>Apply everything-as-code methodologies where applicable</li>
+    <li>Automate or eliminate repetitive tasks</li>
+    <li>Improve workflows to simplify team operations</li>
+    <li>Troubleshoot incidents using metrics, logs, and other data</li>
+    <li>Embrace older technologies for their reliability and low maintenance</li>
+    <li>Spread DevOps philosophies across teams</li>
+    <li>Collaborate with engineers across software, network, cloud, and systems</li>
+  </ul>
+
+  <h3>Outlook</h3>
+
+  <ul>
+    <li>Shape the future of service management using Kubernetes</li>
+    <li>Support global data platforms across multiple clouds</li>
+    <li>Improve and manage service migrations across clouds and data centers</li>
+    <li>Work with partner teams to influence product operations</li>
+    <li>Enhance monitoring and logging for better observability</li>
+    <li>Enable Service-Level Objectives for improved reliability</li>
+    <li>Design and conduct stress tests to align scale expectations with reality</li>
+  </ul>
+
+</div>
