@@ -50,7 +50,7 @@ layout: default
 - [MCP Server](https://github.com/shreyasgune/sgune-ai/blob/main/mcp-server)
 - [FastAPI Utilities](https://github.com/shreyasgune/sgune-ai/blob/main/fastapi)
 - [RAG Project](https://github.com/shreyasgune/sgune-ai/blob/main/rag-project)
-
+- [GuneAmp Amplifier Model Sim using Neural Networks](https://github.com/shreyasgune/sgune-ai/tree/main/amp-cab-nn)
 </div>
 
 
