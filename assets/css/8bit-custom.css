@@ -1,34 +1,44 @@
 /* =========================================================
-   8-bit Theme – Readable Portfolio (Game Boy Style)
+   8-bit Portfolio Theme – Readable + Badges + Dark Mode
    ========================================================= */
 
 /* -------------------------
-   Color Palette
+   COLOR VARIABLES
 -------------------------- */
 :root {
     --8bit-primary: #2d5016;
     --8bit-secondary: #8bbc0f;
     --8bit-bg: #ffffff;
     --8bit-text: #000000;
+
+    --badge-new: #00aa00;
+    --badge-active: #8bbc0f;
+    --badge-coming: #b58900;
+}
+
+/* Dark mode overrides */
+#dark-toggle:checked ~ * {
+    --8bit-bg: #121212;
+    --8bit-text: #e0e0e0;
 }
 
 /* -------------------------
-   Base Layout & Typography
+   BASE TYPOGRAPHY
 -------------------------- */
 body {
     background-color: var(--8bit-bg);
     color: var(--8bit-text);
-    font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 1rem;
     line-height: 1.75;
     margin: 0;
 }
 
 /* -------------------------
-   Main Container
+   CONTAINER
 -------------------------- */
 .container {
-    background-color: #f5f5f5;
+    background-color: rgba(0,0,0,0.03);
     border: 4px solid var(--8bit-primary);
     padding: 2rem;
     margin: 1rem auto;
@@ -36,7 +46,7 @@ body {
 }
 
 /* -------------------------
-   Headings – 8-bit
+   HEADINGS – 8-BIT
 -------------------------- */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Press Start 2P', cursive;
@@ -51,77 +61,42 @@ h1 {
     padding-bottom: 0.5rem;
 }
 
-h2 { font-size: 1.5rem; }
+h2 { font-size: 1.4rem; }
 h3 { font-size: 1rem; }
 
 /* -------------------------
-   Paragraphs – Readable
+   PARAGRAPHS – READABLE
 -------------------------- */
-p {
-    font-family: 'Merriweather', Georgia, serif;
+p, ul, ol {
+    font-family: Georgia, serif;
     font-size: 1rem;
     line-height: 1.8;
-    margin: 0.75rem 0;
 }
 
 /* -------------------------
-   General Lists – Readable
+   LINKS
 -------------------------- */
-ul, ol {
-    font-family: 'Merriweather', Georgia, serif;
-    font-size: 1rem;
-    line-height: 1.7;
-}
-
-/* -------------------------
-   NES Containers
--------------------------- */
-.nes-container {
-    background-color: #f5f5f5;
-    border: 3px solid var(--8bit-primary);
-    margin: 1rem 0;
-    padding: 1rem;
-}
-
-.nes-container.is-rounded {
-    border-radius: 0;
-}
-
-/* NES-style bullets */
-.nes-container ul {
-    list-style: none;
-    padding-left: 1rem;
-}
-
-.nes-container ul li {
-    margin: 0.5rem 0;
-    padding-left: 1.5rem;
-    position: relative;
-}
-
-.nes-container ul li::before {
-    content: "▶";
-    position: absolute;
-    left: 0;
+a {
     color: var(--8bit-primary);
-    font-family: 'Press Start 2P', cursive;
-    font-size: 0.75rem;
+    text-decoration: none;
+    border-bottom: 2px solid var(--8bit-secondary);
+}
+
+a:hover {
+    background-color: rgba(139,188,15,0.2);
 }
 
 /* -------------------------
-   Buttons – 8-bit UI
+   BUTTONS – NES STYLE
 -------------------------- */
 .nes-btn {
+    font-family: 'Press Start 2P', cursive;
     background-color: var(--8bit-primary);
-    color: #ffffff;
+    color: #fff;
     border: 4px outset #dfdfdf;
     padding: 0.75rem 1.5rem;
+    font-size: 0.75rem;
     cursor: pointer;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 0.8rem;
-    margin: 0.5rem 0.25rem;
-    transition: all 0.05s;
-    display: inline-block;
     box-shadow: inset -4px -4px #1a1a1a,
                 inset 4px 4px #dfdfdf;
 }
@@ -131,161 +106,137 @@ ul, ol {
     color: #000;
 }
 
-.nes-btn:active {
-    box-shadow: inset 4px 4px #1a1a1a,
-                inset -4px -4px #dfdfdf;
-}
-
 /* -------------------------
-   Links
--------------------------- */
-a {
-    color: var(--8bit-primary);
-    text-decoration: none;
-    border-bottom: 2px solid var(--8bit-secondary);
-}
-
-a:hover {
-    color: var(--8bit-secondary);
-    background-color: rgba(139, 188, 15, 0.15);
-}
-
-/* Docs links */
-a[href*="docs/"] {
-    border-bottom: 3px solid var(--8bit-primary);
-    background-color: rgba(139, 188, 15, 0.1);
-    padding: 2px 4px;
-}
-
-/* -------------------------
-   Social Links – 8-bit UI
+   SOCIAL LINKS – 8-BIT UI
 -------------------------- */
 .social-links {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin: 1rem 0;
 }
 
 .social-links a {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    border: 2px solid var(--8bit-secondary);
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem;
-    border: 2px solid var(--8bit-secondary);
-    background-color: rgba(139, 188, 15, 0.1);
-    font-family: 'Press Start 2P', cursive;
-    font-size: 0.7rem;
-    letter-spacing: 0.05em;
-}
-
-.social-links a:hover {
-    background-color: rgba(45, 80, 22, 0.15);
-    border-color: var(--8bit-primary);
 }
 
 /* -------------------------
-   Project Sections – 8-bit UI
+   PROJECT SECTIONS – 8-BIT UI
 -------------------------- */
 .project-section {
-    margin: 2rem 0;
     border-left: 4px solid var(--8bit-secondary);
     padding-left: 1rem;
+    margin: 2rem 0;
 }
 
 .project-item {
-    margin: 0.75rem 0;
-    padding: 0.75rem;
-    background-color: rgba(139, 188, 15, 0.1);
-    border: 1px solid var(--8bit-primary);
     font-family: 'Press Start 2P', cursive;
     font-size: 0.7rem;
     line-height: 1.6;
-    letter-spacing: 0.03em;
-}
-
-.project-item a {
-    display: inline-block;
-    padding: 0.3rem 0.5rem;
-    background-color: var(--8bit-primary);
-    color: #fff;
-    border: 2px solid var(--8bit-text);
-}
-
-.project-item a:hover {
-    background-color: var(--8bit-secondary);
-    color: var(--8bit-text);
+    background-color: rgba(139,188,15,0.1);
+    border: 1px solid var(--8bit-primary);
+    padding: 0.75rem;
+    margin: 0.75rem 0;
+    position: relative;
 }
 
 /* -------------------------
-   Status Badges – 8-bit
+   AUTOMATIC STATUS BADGES
 -------------------------- */
-.status-new,
-.status-active,
-.status-coming {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 0.6rem;
+.project-item::after {
+    position: absolute;
+    top: 6px;
+    right: 6px;
     padding: 0.25rem 0.5rem;
-    border: 2px solid var(--8bit-bg);
-    color: var(--8bit-bg);
+    font-size: 0.55rem;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    border: 2px solid #fff;
 }
 
-.status-new { background-color: #00ff00; }
-.status-active { background-color: var(--8bit-secondary); }
-.status-coming { background-color: #ffcc00; }
+/* Explicit classes */
+.status-new::after {
+    content: "NEW";
+    background-color: var(--badge-new);
+}
+
+.status-active::after {
+    content: "ACTIVE";
+    background-color: var(--badge-active);
+}
+
+.status-coming::after {
+    content: "COMING";
+    background-color: var(--badge-coming);
+}
+
+/* Attribute-based auto badges */
+.project-item[data-status="new"]::after {
+    content: "NEW";
+    background-color: var(--badge-new);
+}
+
+.project-item[data-status="active"]::after {
+    content: "ACTIVE";
+    background-color: var(--badge-active);
+}
+
+.project-item[data-status="coming"]::after {
+    content: "COMING";
+    background-color: var(--badge-coming);
+}
 
 /* -------------------------
-   Blockquotes & Code
+   BLOCKQUOTES & CODE
 -------------------------- */
 blockquote {
-    border-left: 5px solid var(--8bit-primary);
-    margin: 1.5rem 0;
-    padding: 1rem 1.5rem;
-    background-color: #e0e0e0;
     font-family: 'VT323', monospace;
     font-size: 1.15rem;
-    line-height: 1.8;
+    background-color: rgba(0,0,0,0.05);
+    padding: 1rem 1.5rem;
+    border-left: 5px solid var(--8bit-primary);
 }
 
 code {
-    background-color: rgba(0, 0, 0, 0.6);
+    font-family: 'Courier New', monospace;
+    background-color: rgba(0,0,0,0.6);
     color: #00ff00;
     padding: 0.25rem 0.5rem;
-    border: 1px solid var(--8bit-secondary);
-    font-family: 'Courier New', monospace;
 }
 
 /* -------------------------
-   Footer
+   DARK MODE TOGGLE BUTTON
+-------------------------- */
+.dark-toggle {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.6rem;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.4rem 0.6rem;
+    border: 2px solid var(--8bit-secondary);
+}
+
+/* -------------------------
+   FOOTER
 -------------------------- */
 .site-footer {
     text-align: center;
+    font-size: 0.75rem;
+    border-top: 3px solid var(--8bit-secondary);
     margin-top: 3rem;
     padding-top: 1rem;
-    border-top: 3px solid var(--8bit-secondary);
-    color: #666;
-    font-size: 0.8rem;
 }
 
 /* -------------------------
-   SVG Icons
--------------------------- */
-svg {
-    filter: drop-shadow(2px 2px 0 var(--8bit-secondary));
-}
-
-/* -------------------------
-   Responsive
+   RESPONSIVE
 -------------------------- */
 @media (max-width: 768px) {
     h1 { font-size: 1.5rem; }
     h2 { font-size: 1.2rem; }
-
-    .container {
-        padding: 1rem;
-    }
-
-    p {
-        font-size: 1.05rem;
-    }
 }

@@ -2,6 +2,13 @@
 layout: default
 ---
 
+<input type="checkbox" id="dark-toggle" hidden>
+
+<label for="dark-toggle" class="dark-toggle">
+  🌙 DARK MODE
+</label>
+
+
 <div style="text-align: center; margin-bottom: 2rem;">
     <img src="docs/kenobi-obi-wan.gif" width="65" height="25" alt="Hello There" />
     <h1>⚡ SHREYAS GUNE ⚡</h1>
@@ -26,6 +33,7 @@ layout: default
         <a href="docs/what_i_do.html" class="nes-btn is-primary">What I Do</a>
         <a href="docs/slo_sli_method.html" class="nes-btn is-primary">SLOs & SLIs</a>
         <a href="docs/jira_method.html" class="nes-btn is-primary">JIRA Method</a>
+        <a href="docs/devteam_onboarding.pdf" class="nes-btn is-primary">Dev Team Onboarding</a>
     </div>
 </div>
 
@@ -34,11 +42,17 @@ layout: default
 ## 🚀 ACTIVE PROJECTS
 
 <div class="nes-container is-rounded">
-    <h4>Currently In Progress</h4>
-    <ul>
-        <li><a href="https://github.com/shreyasgune/sgune-ai">AI Experiments</a></li>
-    </ul>
+
+### Currently In Progress
+
+- [Regression & Gradient Projects](https://github.com/shreyasgune/sgune-ai/blob/main/regression-gradient)
+- [Neural Network Experiments](https://github.com/shreyasgune/sgune-ai/blob/main/neural-net)
+- [MCP Server](https://github.com/shreyasgune/sgune-ai/blob/main/mcp-server)
+- [FastAPI Utilities](https://github.com/shreyasgune/sgune-ai/blob/main/fastapi)
+- [RAG Project](https://github.com/shreyasgune/sgune-ai/blob/main/rag-project)
+
 </div>
+
 
 <div class="nes-container is-rounded" style="border-color: #00ff00; background-color: rgba(0, 255, 0, 0.05);">
     <h4>🆕 NEW!</h4>
@@ -76,6 +90,7 @@ layout: default
 <br>
 
 # 🎮 TECH LABS & PROJECTS
+
 
 ## KUBERNETES
 <div class="nes-container is-rounded">
@@ -239,7 +254,7 @@ layout: default
 
 ---
 
-# 📖 NOTES & PRACTICES
+#  NOTES & PRACTICES
 
 <div class="nes-container is-rounded">
     <h3>SRE, DevOps, and Cloud Technologies</h3>
@@ -259,12 +274,13 @@ layout: default
         <div class="project-item"><a href="docs/post-mortem-overview.pdf">Postmortem Overviews</a></div>
         <div class="project-item"><a href="docs/notes/sgune_kube_notes.pdf">Handwritten Kubernetes Notes</a></div>
         <div class="project-item"><a href="docs/Customer%20Engagement%20Experience.pdf">Customer Engagement Experience</a></div>
+        <div class="project-item"><a href="docs/devteam_onboarding.pdf">Dev Team Onboarding</a></div>
     </div>
 </div>
 
 ---
 
-## 🎯 KEY FOCUS AREAS
+##  KEY FOCUS AREAS
 
 <div class="nes-container is-rounded">
     <p><a href="docs/key_focus_areas.html" class="nes-btn is-primary" style="display: inline-block;">📌 Learn More</a></p>
@@ -279,7 +295,7 @@ layout: default
     </ul>
 </div>
 
-## 🛡️ AREAS OF FOCUS FOR MITIGATION
+##  AREAS OF FOCUS FOR MITIGATION
 
 <div class="nes-container is-rounded">
     <p><a href="docs/mitigation_focus.html" class="nes-btn is-primary" style="display: inline-block;">📌 Learn More</a></p>
@@ -295,7 +311,7 @@ layout: default
 
 ---
 
-## 🎓 EDUCATION
+##  EDUCATION
 
 <div class="nes-container is-rounded">
     <h3>Masters Program</h3>
@@ -311,7 +327,7 @@ layout: default
 
 ---
 
-## 🌐 SOCIAL & COMMUNITY
+##  SOCIAL & COMMUNITY
 
 <div class="nes-container is-rounded">
     <div class="social-links">
@@ -322,11 +338,11 @@ layout: default
     </div>
 </div>
 
-## 🎵 BANDS & MUSIC
+##  BANDS & MUSIC
 
 <div class="nes-container is-rounded">
     <div class="project-section">
-        <div class="project-item"><a href="albumart/index.html">🎨 boopablesnoot Album Art</a> <span class="status-new">NEW!</span></div>
+        <div class="project-item"><a href="albumart/index.html"> boopablesnoot Album Art</a> <span class="status-new">NEW!</span></div>
     </div>
 </div>
 
