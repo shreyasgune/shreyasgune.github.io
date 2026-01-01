@@ -42,7 +42,7 @@ layout: default
 ##  ACTIVE PROJECTS
 
 <div class="nes-container is-rounded nes-8bit">
-    <h4>Currently In Progress</h4></div>
+    <h4>Currently In Progress</h4>
     <ul>
         <li><a href="https://github.com/shreyasgune/sgune-ai/blob/main/regression-gradient">Regression & Gradient Projects</a></li>
         <li><a href="https://github.com/shreyasgune/sgune-ai/blob/main/neural-net">Neural Network Experiments</a></li>
