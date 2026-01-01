@@ -1,5 +1,10 @@
-/* 8-bit Theme Custom Styling - Game Boy Original */
+/* =========================================================
+   8-bit Theme Custom Styling - Game Boy Original (Readable)
+   Headings & UI: 8-bit pixel font
+   Body & Lists: Readable serif font
+   ========================================================= */
 
+/* Color Palette */
 :root {
     --8bit-primary: #2d5016;
     --8bit-secondary: #8bbc0f;
@@ -7,13 +12,19 @@
     --8bit-text: #000000;
 }
 
+/* ---------------------------------------------------------
+   Base Layout & Typography
+--------------------------------------------------------- */
 body {
     background-color: var(--8bit-bg);
     color: var(--8bit-text);
-    font-family: 'Press Start 2P', cursive;
-    line-height: 1.6;
+    font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+    font-size: 1rem;
+    line-height: 1.75;
+    margin: 0;
 }
 
+/* Container */
 .container {
     background-color: #f5f5f5;
     border: 4px solid var(--8bit-primary);
@@ -22,8 +33,11 @@ body {
     max-width: 900px;
 }
 
-/* Headings */
+/* ---------------------------------------------------------
+   Headings (8-bit)
+--------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Press Start 2P', cursive;
     color: var(--8bit-primary);
     text-shadow: 2px 2px 0px var(--8bit-secondary);
     margin: 1.5rem 0 1rem 0;
@@ -37,14 +51,66 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
-    color: var(--8bit-primary);
 }
 
 h3 {
     font-size: 1rem;
 }
 
-/* Buttons - NES.css style */
+/* ---------------------------------------------------------
+   Body Text & Lists (Readable)
+--------------------------------------------------------- */
+p {
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0.75rem 0;
+}
+
+ul, ol {
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* ---------------------------------------------------------
+   NES Containers
+--------------------------------------------------------- */
+.nes-container {
+    background-color: #f5f5f5;
+    border: 3px solid var(--8bit-primary);
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.nes-container.is-rounded {
+    border-radius: 0;
+}
+
+/* Custom List Style */
+.nes-container ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.nes-container ul li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.nes-container ul li::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    color: var(--8bit-primary);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.75rem;
+}
+
+/* ---------------------------------------------------------
+   Buttons (NES Style)
+--------------------------------------------------------- */
 .nes-btn {
     background-color: var(--8bit-primary);
     color: #ffffff;
@@ -68,33 +134,9 @@ h3 {
     box-shadow: inset 4px 4px #1a1a1a, inset -4px -4px #dfdfdf;
 }
 
-.nes-btn.is-primary {
-    background-color: var(--8bit-primary);
-    color: #ffffff;
-}
-
-.nes-btn.is-primary:hover {
-    background-color: var(--8bit-secondary);
-    color: #000000;
-}
-
-/* Internal Doc Links */
-a[href*="docs/"] {
-    color: var(--8bit-primary);
-    text-decoration: none;
-    border-bottom: 3px solid var(--8bit-primary);
-    padding-bottom: 2px;
-    background-color: rgba(139, 188, 15, 0.1);
-    padding: 2px 4px;
-}
-
-a[href*="docs/"]:hover {
-    color: #ffffff;
-    background-color: var(--8bit-secondary);
-    border-bottom-color: var(--8bit-primary);
-}
-
-/* Links */
+/* ---------------------------------------------------------
+   Links
+--------------------------------------------------------- */
 a {
     color: var(--8bit-primary);
     text-decoration: none;
@@ -106,19 +148,16 @@ a:hover {
     background-color: rgba(139, 188, 15, 0.15);
 }
 
-/* Containers */
-.nes-container {
-    background-color: #f5f5f5;
-    border: 3px solid var(--8bit-primary);
-    margin: 1rem 0;
-    padding: 1rem;
+/* Internal Docs */
+a[href*="docs/"] {
+    border-bottom: 3px solid var(--8bit-primary);
+    background-color: rgba(139, 188, 15, 0.1);
+    padding: 2px 4px;
 }
 
-.nes-container.is-rounded {
-    border-radius: 0;
-}
-
-/* Project Lists */
+/* ---------------------------------------------------------
+   Project Sections
+--------------------------------------------------------- */
 .project-section {
     margin: 2rem 0;
     border-left: 4px solid var(--8bit-secondary);
@@ -132,53 +171,59 @@ a:hover {
     border: 1px solid var(--8bit-primary);
 }
 
-.project-item a {
-    display: inline-block;
-    padding: 0.25rem 0.5rem;
-    background-color: var(--8bit-primary);
-    color: #ffffff;
-    border: 2px solid var(--8bit-text);
-    margin-right: 0.5rem;
-    border-bottom: 2px solid var(--8bit-text);
-}
-
-.project-item a:hover {
-    background-color: var(--8bit-secondary);
-    color: var(--8bit-text);
-}
-
-/* Status badges */
-.status-new {
-    background-color: #00ff00;
-    color: var(--8bit-bg);
-    padding: 0.25rem 0.5rem;
-    border: 2px solid var(--8bit-bg);
-    font-weight: bold;
-    font-size: 0.7rem;
-}
-
-.status-active {
-    background-color: var(--8bit-secondary);
-    color: var(--8bit-bg);
-    padding: 0.25rem 0.5rem;
-    border: 2px solid var(--8bit-bg);
-    font-size: 0.7rem;
-}
-
+/* ---------------------------------------------------------
+   Status Badges
+--------------------------------------------------------- */
+.status-new,
+.status-active,
 .status-coming {
-    background-color: #ffcc00;
-    color: var(--8bit-bg);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
     padding: 0.25rem 0.5rem;
     border: 2px solid var(--8bit-bg);
-    font-size: 0.7rem;
+    color: var(--8bit-bg);
 }
 
-/* SVG Icons */
-svg {
-    filter: drop-shadow(2px 2px 0px var(--8bit-secondary));
+.status-new { background-color: #00ff00; }
+.status-active { background-color: var(--8bit-secondary); }
+.status-coming { background-color: #ffcc00; }
+
+/* ---------------------------------------------------------
+   Blockquotes & Code
+--------------------------------------------------------- */
+blockquote {
+    border-left: 5px solid var(--8bit-primary);
+    margin: 1.5rem 0;
+    padding: 1rem 1.5rem;
+    background-color: #e0e0e0;
+    font-family: 'VT323', monospace;
+    font-size: 1.15rem;
+    line-height: 1.8;
 }
 
-/* Social Links */
+code {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #00ff00;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--8bit-secondary);
+    font-family: 'Courier New', monospace;
+}
+
+/* ---------------------------------------------------------
+   Footer
+--------------------------------------------------------- */
+.site-footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 3px solid var(--8bit-secondary);
+    color: #666666;
+    font-size: 0.8rem;
+}
+
+/* ---------------------------------------------------------
+   Social Links
+--------------------------------------------------------- */
 .social-links {
     display: flex;
     flex-wrap: wrap;
@@ -195,82 +240,27 @@ svg {
     background-color: rgba(139, 188, 15, 0.1);
 }
 
-.social-links a:hover {
-    background-color: rgba(45, 80, 22, 0.15);
-    border-color: var(--8bit-primary);
+/* ---------------------------------------------------------
+   SVG Icons
+--------------------------------------------------------- */
+svg {
+    filter: drop-shadow(2px 2px 0px var(--8bit-secondary));
 }
 
-/* Blockquotes and Code */
-blockquote {
-    border-left: 5px solid var(--8bit-primary);
-    margin: 1.5rem 0;
-    padding: 1rem 1.5rem;
-    background-color: #e0e0e0; /* A slightly darker background for contrast */
-    color: var(--8bit-text);
-    font-family: 'VT323', monospace;
-    font-size: 1.1rem;
-}
-
-code {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #00ff00;
-    padding: 0.25rem 0.5rem;
-    border: 1px solid var(--8bit-secondary);
-    font-family: 'Courier New', monospace;
-}
-
-/* Footer */
-.site-footer {
-    text-align: center;
-    margin-top: 3rem;
-    padding-top: 1rem;
-    border-top: 3px solid var(--8bit-secondary);
-    color: #666666;
-    font-size: 0.8rem;
-}
-
-/* List styling for doc sections */
-.nes-container ul {
-    list-style: none;
-    padding-left: 1rem;
-}
-
-.nes-container ul li {
-    margin: 0.5rem 0;
-    padding-left: 1.5rem;
-    position: relative;
-}
-
-.nes-container ul li:before {
-    content: "▶";
-    position: absolute;
-    left: 0;
-    color: var(--8bit-primary);
-}
-
-/* Responsive */
+/* ---------------------------------------------------------
+   Responsive
+--------------------------------------------------------- */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-    
-    h2 {
-        font-size: 1.2rem;
-    }
-    
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.2rem; }
+
     .container {
         padding: 1rem;
     }
-    
-    .nes-btn {
-        font-size: 0.7rem;
-        padding: 0.5rem 1rem;
-    }
-    
-    p {
-        font-family: 'VT323', monospace;
-        font-size: 1.1rem;
+
+    p,
+    .nes-container ul li {
+        font-size: 1.05rem;
         line-height: 1.8;
     }
 }
-
