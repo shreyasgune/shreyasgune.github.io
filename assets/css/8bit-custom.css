@@ -240,3 +240,17 @@ code {
     h1 { font-size: 1.5rem; }
     h2 { font-size: 1.2rem; }
 }
+
+
+.edu-8bit {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.edu-8bit p {
+    font-size: 0.65rem;
+    line-height: 1.8;
+}
+
+.edu-8bit strong {
+    font-weight: normal; /* Press Start 2P has no real bold */
+}
