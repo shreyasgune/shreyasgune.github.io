@@ -254,3 +254,41 @@ code {
 .edu-8bit strong {
     font-weight: normal; /* Press Start 2P has no real bold */
 }
+
+/* =========================================================
+   FORCE 8-BIT FONT FOR SPECIFIC NES CONTAINERS
+   ========================================================= */
+
+.nes-8bit,
+.nes-8bit p,
+.nes-8bit ul,
+.nes-8bit ol,
+.nes-8bit li,
+.nes-8bit a,
+.nes-8bit strong,
+.nes-8bit span {
+    font-family: 'Press Start 2P', cursive !important;
+}
+
+.nes-8bit p,
+.nes-8bit li {
+    font-size: 0.65rem !important;
+    line-height: 1.7;
+}
+
+.nes-8bit ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.nes-8bit li {
+    margin: 0.75rem 0;
+}
+
+.nes-8bit strong {
+    font-weight: normal; /* Press Start 2P has no true bold */
+}
+
+.nes-8bit a {
+    border-bottom: 2px solid var(--8bit-secondary);
+}

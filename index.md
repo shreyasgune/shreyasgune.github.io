@@ -41,7 +41,7 @@ layout: default
 
 ##  ACTIVE PROJECTS
 
-<div class="nes-container is-rounded">
+<div class="nes-container is-rounded nes-8bit">
     <h4>Currently In Progress</h4>
     <ul>
         <li><a href="https://github.com/shreyasgune/sgune-ai/blob/main/regression-gradient">Regression & Gradient Projects</a></li>
@@ -49,22 +49,32 @@ layout: default
         <li><a href="https://github.com/shreyasgune/sgune-ai/blob/main/mcp-server">MCP Server</a></li>
         <li><a href="https://github.com/shreyasgune/sgune-ai/blob/main/fastapi">FastAPI Utilities</a></li>
         <li><a href="https://github.com/shreyasgune/sgune-ai/blob/main/rag-project">RAG Project</a></li>
-        <li><a href="https://github.com/shreyasgune/sgune-ai/tree/main/amp-cab-nn">GuneAmp Amplifier Model Sim using Neural Networks</a></li>
+        <li><a href="https://github.com/shreyasgune/sgune-ai/tree/main/amp-cab-nn">
+            GuneAmp Amplifier Model Sim using Neural Networks
+        </a></li>
     </ul>
 </div>
 
-<div class="nes-container is-rounded"      style="border-color: #00ff00;
-            background-color: rgba(0, 255, 0, 0.05);
-            font-family: 'Press Start 2P', cursive;
-            font-size: 0.65rem;">
-    <h4> </h4>
+
+<div class="nes-container is-rounded nes-8bit"
+     style="border-color:#00ff00; background-color:rgba(0,255,0,0.05);">
+    <h4>🆕 NEW!</h4>
     <ul>
-        <li><a href="docs/notes/observability_product_roadmap/Product%20Roadmap%20_%20Observability%20Initiative_sgune.pdf">Product Roadmap for Observability</a></li>
-        <li><a href="docs/notes/observability_product_roadmap/ganttchart.html">Observability Gantt Chart and Table</a></li>
-        <li><a href="https://github.com/shreyasgune/promfana/blob/main/promql-alert-compendium.md">PROMQL and Alerts Compendium</a></li>
-        <li><a href="https://github.com/shreyasgune/promfana/tree/main/learning">Prometheus Query Language Lab</a></li>
+        <li><a href="docs/notes/observability_product_roadmap/Product%20Roadmap%20_%20Observability%20Initiative_sgune.pdf">
+            Product Roadmap for Observability
+        </a></li>
+        <li><a href="docs/notes/observability_product_roadmap/ganttchart.html">
+            Observability Gantt Chart and Table
+        </a></li>
+        <li><a href="https://github.com/shreyasgune/promfana/blob/main/promql-alert-compendium.md">
+            PROMQL and Alerts Compendium
+        </a></li>
+        <li><a href="https://github.com/shreyasgune/promfana/tree/main/learning">
+            Prometheus Query Language Lab
+        </a></li>
     </ul>
 </div>
+
 ---
 
 ---
@@ -99,10 +109,10 @@ layout: default
     <div class="project-section">
         <div class="project-item"><a href="https://github.com/shreyasgune/aks">Azure Kubernetes</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/k8-blue-green">Kubernetes Blue-Green</a></div>
-        <div class="project-item"><a href="https://github.com/shreyasgune/kubernetes-deployment">Kubernetes Deployment</a> <span class="status-active">2026</span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/kubernetes-deployment">Kubernetes Deployment</a> <span class="status-active"></span></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/skaffold-demo">Skaffold Demo</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/kubecron-example">Kubernetes Cron</a></div>
-        <div class="project-item"><a href="https://github.com/shreyasgune/sgune-cert-manager">Cert Manager</a> <span class="status-active">2026</span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/sgune-cert-manager">Cert Manager</a> <span class="status-active"></span></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/k8-canary">Canary Deployments</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/k8-canary/tree/master/k8s/ingress">Kubernetes Ingress</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/skaffold-demo/tree/master/ingress-controller">NGINX Ingress</a></div>
@@ -115,8 +125,8 @@ layout: default
 <div class="nes-container is-rounded">
     <div class="project-section">
         <div class="project-item"><a href="https://github.com/shreyasgune/aks/tree/main/.github/workflows">Azure CI/CD using Github Actions</a></div>
-        <div class="project-item"><a href="https://github.com/shreyasgune/git-ci">Github CI Examples</a> <span class="status-active">2026</span></div>
-        <div class="project-item"><a href="https://github.com/shreyasgune/JenkinsToStart">Jenkins</a> <span class="status-active">2026</span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/git-ci">Github CI Examples</a> <span class="status-active"></span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/JenkinsToStart">Jenkins</a> <span class="status-active"></span></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/aks/tree/main/helm-stuff/bootstraper/charts/argocd">ArgoCD</a></div>
         <div class="project-item"><span style="color: #52b90eff;"> Atlantis (Coming Soon)</span></div>
     </div>
@@ -126,7 +136,7 @@ layout: default
 <div class="nes-container is-rounded">
     <div class="project-section">
         <div class="project-item"><a href="https://github.com/shreyasgune/ELK-lab">ELK Lab</a></div>
-        <div class="project-item"><a href="https://github.com/shreyasgune/promfana">Prometheus + Grafana Lab</a> <span class="status-active">2026</span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/promfana">Prometheus + Grafana Lab</a> <span class="status-active"></span></div>
         <div class="project-item"><a href="docs/notes/install-logging-agent.html">Install Logging Agent</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/promfana/tree/main/monitoring-stack/loki-stack">Loki Lab</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/grafana-tempo">Tempo Lab</a></div>
@@ -141,8 +151,8 @@ layout: default
 ## SERVICE MESH
 <div class="nes-container is-rounded">
     <div class="project-section">
-        <div class="project-item"><a href="https://github.com/shreyasgune/istio-lab">Istio Lab</a> <span class="status-active">2026</span></div>
-        <div class="project-item"><a href="https://github.com/shreyasgune/consul-lab">Consul Lab</a> <span class="status-active">2026</span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/istio-lab">Istio Lab</a> <span class="status-active"></span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/consul-lab">Consul Lab</a> <span class="status-active"></span></div>
     </div>
 </div>
 
@@ -177,7 +187,7 @@ layout: default
     <div class="project-section">
         <div class="project-item"><a href="https://github.com/shreyasgune/OpenStack-Topo-Deployment">OpenStack Lab</a></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/rancher-lab">Rancher Lab</a></div>
-        <div class="project-item"><a href="https://github.com/shreyasgune/terraform-snippets">Terraform Snippets</a> <span class="status-active">2026</span></div>
+        <div class="project-item"><a href="https://github.com/shreyasgune/terraform-snippets">Terraform Snippets</a> <span class="status-active"></span></div>
         <div class="project-item"><a href="https://github.com/shreyasgune/dnsmasq-docker">dnsmasq in Docker</a></div>
     </div>
 </div>
@@ -258,11 +268,6 @@ layout: default
 
 #  NOTES & PRACTICES
 
-<div class="nes-container is-rounded">
-    <h3>SRE, DevOps, and Cloud Technologies</h3>
-    <p>Comprehensive documentation on industry best practices and personal learnings.</p>
-</div>
-
 ## CONFERENCE TECH TALK
 <div class="nes-container is-rounded">
     <h4>FutureStack 2019</h4>
@@ -315,17 +320,18 @@ layout: default
 
 ##  EDUCATION
 
-<div class="nes-container is-rounded edu-8bit">
+<div class="nes-container is-rounded nes-8bit">
     <h3>Masters Program</h3>
     <p><strong>University of Texas at Arlington</strong></p>
     <p>M.S. in Electrical Engineering</p>
 </div>
 
-<div class="nes-container is-rounded edu-8bit">
+<div class="nes-container is-rounded nes-8bit">
     <h3>Bachelors Program</h3>
     <p><strong>University of Mumbai</strong></p>
     <p>B.E. in Electronics and Telecommunication Engineering</p>
 </div>
+
 
 ---
 
