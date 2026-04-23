@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    
-    <!-- NES.css -->
-    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    
-    <!-- Custom 8-bit styling -->
-    <link rel="stylesheet" href="{{ '/assets/css/8bit-custom.css' | relative_url }}">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ site.name | default: "Shreyas Gune" }}</title>
+  <title>{{ site.name | default: "Shreyas Gune" }}</title>
+
+  <!-- Base styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- NES.css -->
+  <link href="https://unpkg.com/nes.css@2.3.0/css/nes.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/8bit-custom.css' | relative_url }}">
 </head>
+
 <body>
-    <div class="container nes-container is-rounded">
-        {{ content }}
+
+  <!-- CENTERING WRAPPER -->
+  <div class="main-container">
+
+    <!-- NES STYLED CONTENT BOX -->
+    <div class="nes-container is-rounded">
+      {{ content }}
     </div>
-    
-    <footer class="site-footer">
-        <span class="site-footer-credits">
-            Powered by <a href="https://pages.github.com">GitHub Pages</a>
-        </span>
-    </footer>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <span class="site-footer-credits">
+      Powered by <a href="https://pages.github.com">GitHub Pages</a>
+    </span>
+  </footer>
+
 </body>
 </html>
