@@ -292,3 +292,20 @@ code {
 .nes-8bit a {
     border-bottom: 2px solid var(--8bit-secondary);
 }
+
+.main-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.site-footer {
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+/* Optional: better spacing between NES sections */
+.nes-container {
+  margin-bottom: 1.5rem;
+}
